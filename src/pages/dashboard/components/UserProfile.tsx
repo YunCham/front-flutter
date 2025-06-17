@@ -8,7 +8,7 @@ interface UserProfileProps {
   email: string;
   onEdit?: () => void;
   onDelete?: () => void;
-  onClose: () => void;
+  onClose?: () => void;
   editMode?: boolean;
 }
 
