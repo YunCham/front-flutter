@@ -95,6 +95,7 @@ export const importDesign = async (file: File): Promise<RoomState> => {
 
         resolve({
           room: {
+            _id: jsonData.room.id || '', // Assuming _id is the same as id for simplicity
             id: jsonData.room.id || '',
             name: jsonData.room.name || 'Untitled Design',
             views: transformedViews // Include views in the room object
