@@ -126,9 +126,9 @@ export const useCanvasPosition = () => {
         }
       },
       // Añadir un manejador para cuando comienza el arrastre
-      canDrop: (item, monitor) => {
-        return true;
-      },
+      // canDrop: (item, monitor) => {
+      //   return true;
+      // },
     }),
     [activeViewId, addComponent, updateComponentPosition, initialOffset, initialPosition]
   );
